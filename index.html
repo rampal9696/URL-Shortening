@@ -1,0 +1,113 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="shortcut icon" href="assets/img/favicon-32x32.png" type="image/x-icon">  
+    <title>Shortly URL shortening API</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="#" data-toggle="modal" data-target="#popup"><img src="https://raw.githubusercontent.com/alyssie/shortly-url-shortening-api/f4851b8bf4decc315b8ea84207fd6c45a53d725c/assets/img/icon-brand-recognition.svg" alt="Shortly Logo"></a>
+            <a class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <div class="burger-menu"></div>
+                <div class="burger-menu"></div>
+                <div class="burger-menu"></div>
+            </a>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav pt-4 pt-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-toggle="modal" data-target="#popup">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-toggle="modal" data-target="#popup">Pricing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-toggle="modal" data-target="#popup">Resources</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ml-auto br-top pt-4 pb-4 pt-lg-4">
+                    <li class="nav-item">
+                        <a class="nav-link login-btn" href="#" data-toggle="modal" data-target="#popup">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <button class="nav-link button small mb-3 mb-lg-0"  data-toggle="modal" data-target="#popup">Sign Up</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div id="loader" class="my-auto">
+        <div class="loader">
+            LOADING
+        </div>
+    </div>
+    <section id="header">
+        <div class="container">
+            <div class="row h-100 relative">
+                <div class="col-12 col-lg-6 my-md-auto">
+                    <h1 class="title">More than just<br>shorter links</h1>
+                    <p class="sub-title">Build your brand’s recognition and get detailed insights
+                    on how your links are performing.</p>
+                    <button class="button big smooth-scroll wow animate__animated animate__tada">Get Started</button>
+                </div>
+                <img src="https://raw.githubusercontent.com/alyssie/shortly-url-shortening-api/f4851b8bf4decc315b8ea84207fd6c45a53d725c/assets/img/illustration-working.svg" alt="Working illustration" class="illustration">
+            </div>
+        </div>
+    </section>
+    <section id="service" class="pb-5">
+        <div class="container relative">
+            <div class="row">
+                <div class="shorten">
+                    <form action="#" id="form-shorten" onsubmit="shorten()" class="mb-0">
+                        <label for="theurl" class="d-none">URL:</label>
+                        <input type="text" id="theurl" name="theurl" placeholder="Shorten a link here...">
+                        <p id="err-msg"></p>
+                        <button id="shorten" class="button big">Shorten It!</button>
+                    </form>
+                </div>
+            </div>
+            <div class="row ripple">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div id="item">
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        </div>
+    </section>
+    
+    <div class="modal fade" id="popup" tabindex="-1" role="dialog" aria-labelledby="popupLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-body px-5 py-4">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <p class="mb-3 text-center">This is a one-pager website with a URL shortening feature made by Ram Pal.</p>
+                    <a href="https://github.com/rampal9696" target="_blank" class="button big d-block text-center mb-2">View Score Code</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"
+    integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g=="
+    crossorigin="anonymous"></script>
+<script src="assets/js/main.js"></script>
+</html>
